@@ -1,0 +1,37 @@
+div.page {
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+}
+
+.icons{
+    flex: 1;
+}
+
+#logo{
+    height: auto;
+    width:100%;
+    padding-left: 0.5em;
+}
+
+#bomba{
+    height: auto;
+    width: 25%;
+    padding-left: 5.3em;
+    padding-top: 1.5em;
+}
+
+#bomba2{
+    height: auto;
+    width: 30%;
+    padding-left: 3em
+}
+
+h1{
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-left: 0.5em;
+    padding-top: 1.7em;
+    color: #ffffff;
+
+}

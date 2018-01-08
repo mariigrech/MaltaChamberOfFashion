@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>Facebook</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Picker Model -->
+    <div class="picker-modal">
+        <div class="picker-modal-inner">
+            <div class="list-block media-list no-margin">
+                <ul>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-bookmark-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Save video
+                                </div>
+                                <div class="item-subtitle">
+                                    Add this to your saved videos
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Give feedback on this post
+                                </div>
+                                <div class="item-subtitle">
+                                    You can also report this post after giving feedback
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-window-close-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Hide post
+                                </div>
+                                <div class="item-subtitle">
+                                    See fewer posts like these
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-window-close-o"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Unfollow Naomi
+                                </div>
+                                <div class="item-subtitle">
+                                    Stop seeing posts from this user
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-history"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    View Edit History
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-globe"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Turn on notifications for this post
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link item-content">
+                            <div class="item-media">
+                                <i class="icon fa fa-link"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">
+                                    Copy Link
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+
+                <!-- Main Navbar-->
+                <div class="navbar-inner">
+                    <div class="left">
+                        <!--icon-only will give our icons a standard spacing-->
+                        <a href="#" class="link icon-only">
+                            <i class="icon fa fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <form class="center" id="fb-search">
+                        <label for="input-search">
+                            <i class="icon fa fa-search"></i>
+                        </label>
+                        <input type="text" id="input-search" placeholder="Search">
+                    </form>
+
+                    <div class="right">
+                        <a href="#" class="link icon-only">
+                            <i class="icon fa fa-comment">
+                                <span class="badge bg-red">99+</span>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                    <!-- Sub Navbar-->
+                    <div class="subnavbar">
+                        <div class="toolbar tabbar">
+                            <div class="toolbar-inner">
+                                <a href="#" class="tab-link active">
+                                    <i class="icon fa fa-window-maximize"></i>
+                                </a>
+                                <a href="#" class="tab-link">
+                                    <i class="icon fa fa-users"></i>
+                                </a>
+                                <a href="#" class="tab-link">
+                                    <i class="icon fa fa-bell-o"></i>
+                                </a>
+                                <a href="#" class="tab-link">
+                                    <i class="icon fa fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page with-subnavbar">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+
+                        <div class="content-block">
+                            <div class="content-block-inner">
+
+                                <div class="user-header">
+                                    <div class="user-image"></div>
+                                    <div class="post-details">
+                                        <a href="#">Naomi Zammit Ciantar</a>
+                                        <time>2hrs &middot; <i class="fa fa-globe"></i></time>
+                                    </div>
+                                    <div class="user-options">
+                                        <a href="#" class="link icon-only open-picker">
+                                            <i class="icon fa fa-ellipsis-h"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="post-description">
+                                    <p>
+                                        I like chocolate and hazelnut,
+                                        except when I can't eat it.
+                                    </p>
+                                </div>
+                                <div class="post-attachment">
+                                    <!-- Blank until we need to add media -->
+                                </div>
+
+                                <div class="post-feedback row">
+                                    <div class="reactions col-auto">
+
+                                    </div>
+
+                                    <div class="comments col-auto">
+                                        <a href="#">3 comments</a>
+                                    </div>
+                                </div>
+
+                                <div class="post-react row">
+                                    <div class="col-auto">
+                                        <a href="#" class="link icon-only">
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                            Like
+                                        </a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="#" class="link icon-only">
+                                            <i class="fa fa-comment-o"></i>
+                                            Comment
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
