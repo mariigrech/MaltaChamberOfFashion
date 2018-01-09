@@ -1,27 +1,60 @@
-<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 
-<!-- Top Navbar-->
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="left">
-            <a href="#" class="back link">
-                <i class="icon icon-back"></i>
-                <span>Back</span>
-            </a>
-        </div>
-        <div class="center sliding">About</div>
-        <div class="right">
-            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-        </div>
-    </div>
-</div>
-<div class="pages">
-    <div data-page="about" class="page">
-        <div class="page-content">
-            <div class="content-block">
-                <p>Here is About page!</p>
-                <p>Fusce eros lectus, accumsan eget mi vel, iaculis tincidunt felis. Nulla tincidunt pharetra sagittis. Fusce in felis eros. Nulla sit amet aliquam lorem, et gravida ipsum. Mauris consectetur nisl non sollicitudin tristique. Praesent vitae metus ac quam rhoncus mattis vel et nisi. Aenean aliquet, felis quis dignissim iaculis, lectus quam tincidunt ligula, et venenatis turpis risus sed lorem. Morbi eu metus elit. Ut vel diam dolor.</p>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- app title -->
+    <title>Chamber of Fashion Malta Foundation</title>
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</head>
+
+<body>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <div class="logo">
+                                 <img id="logo1" src="img/logo.png" alt="logo"></img>
+                              </div>
+                                <div class="back">
+                                    <!-- <a href="index.html"><i class="icon fa fa-arrow-left"></i><onclick="history.back(-1)"/></a> -->
+                                    <a href="index.html"><img id="arrow" src="img/arrow.png" alt="arrow"></img></a>
+
+                                </div>
+
+                                <div class="menuicon">
+                                    <a href="myaccount.html"><div class="MyAccount">
+                                        <a href="myaccount.html"><img id="account" src="img/profile.png" alt="profile"></img></a>
+                                            <div id="header2">
+                                                <h2>My Account</h2>
+                                            </div></a>
+                                    </div>
+
+                                </div>
+                             </div>
+                            <!-- Link to another page -->
+                            <!-- <a href="about.html">About app</a> -->
+                        </div>
+                    </div>
+
+
+</body>
+
+</html>

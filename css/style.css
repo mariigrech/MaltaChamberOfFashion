@@ -1,0 +1,36 @@
+div.page {
+    background-image: url(../img/Background.jpg);
+    background-size: cover;
+}
+
+div.page .icons {
+    flex: 1;
+}
+
+div.page .icons #logo {
+    height: auto;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-top: -20px;
+}
+
+div.page .icons #logo h1 {
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-left: 0.5em;
+    /* padding-top: 1.7em; */
+    color: #ffffff;
+}
+
+div.page .icons #logo h1 #bomba {
+    width: 25%;
+    padding-left: 5.3em;
+    /* padding-top: 1.5em; */
+}
+
+div.page .icons #logo h1 #bomba2 {
+    height: auto;
+    width: 30%;
+    padding-left: 3em;
+}
