@@ -135,7 +135,7 @@ h1 {
     letter-spacing: 4px;
     color: #ffffff;
     font-size: 20px;
-    margin-top: -15px;
+    margin-top: 10px;
     text-align: center;
     font-weight: lighter;
 }
@@ -145,19 +145,19 @@ h1 {
     letter-spacing: 4px;
     color: #ffffff;
     font-size: 20px;
-    margin-top: -15px;
+    margin-top: -10px;
     font-weight: lighter;
     text-align: center;
 }
 
 #line2 {
-    margin-top: -50px;
+    margin-top: -23px;
     margin-left: 5px;
     width: 100%;
 }
 
 #line3 {
-    margin-top: -50px;
+    margin-top: -22px;
     margin-left: 5px;
     width: 100%;
     padding-top: 5px;
@@ -173,7 +173,7 @@ h1 {
     color: #ffffff;
     letter-spacing: 4px;
     font-weight: lighter;
-    margin-left: 180px;
+    float: right;
     text-decoration: underline;
     font-size: 25px;
 }
@@ -235,4 +235,57 @@ h1 {
 
 .item-inner {
     padding-top: 40px;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style images */
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.chatroom {
+    padding-top: 30px;
 }

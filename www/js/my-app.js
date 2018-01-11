@@ -55,6 +55,16 @@ $$(document).on('deviceready', function() {
 
         }, {scope: 'read_stream,publish_stream,publish_actions,read_friendlists'});
       });
+      // Map image
+var mapPopup = myApp.photoBrowser({
+  photos: [
+    'img/MaltaMap.jpg',
+  ],
+  type: 'popup'
+});
+$$('.pb-popup').on('click', function() {
+  mapPopup.open();
+});
 });
 
 //Client ID: 934568525970-k030jnmj8inqp2c48arrmopvlsg5ncgh.apps.googleusercontent.com
