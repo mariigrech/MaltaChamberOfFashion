@@ -52,8 +52,7 @@ h1 {
 #account {
     height: 26%;
     width: 26%;
-    padding-right: 50%;
-    padding-left: 50%;
+    margin-left: 70px;
 }
 
 #header2 {
@@ -132,11 +131,10 @@ h1 {
 }
 
 #header4 {
-    padding-left: 110px;
     font-family: "Bebas Neue", Bebas, sanf-serif;
     letter-spacing: 4px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
     margin-top: -15px;
     text-align: center;
     font-weight: lighter;
@@ -146,7 +144,7 @@ h1 {
     font-family: "Bebas Neue", Bebas, sanf-serif;
     letter-spacing: 4px;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -15px;
     font-weight: lighter;
     text-align: center;
