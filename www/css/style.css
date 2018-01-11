@@ -95,20 +95,141 @@ h1 {
     margin-left: 5px;
 }
 
+.menu2icon {
+    padding-top: 25px;
+}
+
+.MyAccount3 {
+    margin-top: -18px;
+}
+
+.MyAccount4 {
+    margin-top: 10px;
+}
+
 #detail {
     height: 26%;
     width: 26%;
-    padding-left: 65px;
+    padding-left: 75px;
 }
 
 #menuitem {
-    height: 20%;
-    width: 25%;
+    height: 30%;
+    width: 23%;
     padding-left: 150px;
 }
 
 #chat {
-    height: 30%;
-    width: 30%;
-    padding-left: 130px;
+    height: 22%;
+    width: 22%;
+    padding-left: 140px;
+    margin-top: -20px;
+}
+
+#header4 {
+    padding-left: 110px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: -15px;
+    align-items: center;
+    font-weight: lighter;
+}
+
+#header5 {
+    padding-left: 100px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: -15px;
+    font-weight: lighter;
+}
+
+#line2 {
+    margin-top: -50px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+#line3 {
+    margin-top: -50px;
+    margin-left: 5px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.item-input-wrap {
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    width: 150px;
+}
+
+#donateheader {
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    margin-left: 180px;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.input-clear-button {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    padding-top: 10px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.input-clear-button1 {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.input-clear-button2 {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.input-clear-button3 {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.input-clear-button4 {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.input-clear-button5 {
+    width: 350px;
+    height: 40px;
+    padding-right: 27px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.item-inner {
+    padding-top: 40px;
 }
