@@ -6,35 +6,34 @@ var myApp = new Framework7();
 
 // Add view
 var mainView = myApp.addView('.view-main', {
-    url: '/'
+  url: '/'
 });
 
-// build items array
-/*=== Popup ===*/ var myPhotoBrowserPopup = app.photoBrowser.create({ photos : [ 'img/MaltaMap.jpg', ], type: 'popup' }); $$('.pb-popup').on('click', function () { myPhotoBrowserPopup.open(); });
+// Map image
+var mapPopup = myApp.photoBrowser({
+  photos: [
+    'img/MaltaMap.jpg',
+  ],
+  type: 'popup'
+});
 
-
-// define options (if needed)
-var options = {
-    // optionName: 'option value'
-    // for example:
-    index: 0 // start at first slide
-};
-
-// Initializes and opens PhotoSwipe
-var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-gallery.init();
+$$(document).on('pageInit', function() {
+  $$('.map-popup').on('click', function() {
+     mapPopup.open();
+  });
+});
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
-    console.log("Device is ready!");
+  console.log("Device is ready!");
 
-    function onSignIn(googleUser) {
-      var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-      console.log('Name: ' + profile.getName());
-      console.log('Image URL: ' + profile.getImageUrl());
-      console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-    }
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
   $("#bomba").click(function() {
     alert("Logging with google");
     onSignIn('maria16grech@gmail.com');
@@ -42,41 +41,41 @@ $$(document).on('deviceready', function() {
 
   window.fbAsyncInit = function() {
 
-      FB.init({
-        appId      : '136085500408614',
-        cookie     : true,
-        xfbml      : true,
-        version    : 'v2.11'
-      });
+    FB.init({
+      appId: '136085500408614',
+      cookie: true,
+      xfbml: true,
+      version: 'v2.11'
+    });
 
     FB.AppEvents.logPageView();
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 
-   $("#bomba2").click(function() {
-     FB.login(function(response) {
-        // handle the response
-        console.log("Response goes here!");
+  $("#bomba2").click(function() {
+    FB.login(function(response) {
+      // handle the response
+      console.log("Response goes here!");
 
-        }, {scope: 'read_stream,publish_stream,publish_actions,read_friendlists'});
-      });
-      // Map image
-var mapPopup = myApp.photoBrowser({
-  photos: [
-    'img/MaltaMap.jpg',
-  ],
-  type: 'popup'
-});
-$$('.pb-popup').on('click', function() {
-  mapPopup.open();
-});
+    }, {
+      scope: 'read_stream,publish_stream,publish_actions,read_friendlists'
+    });
+  });
+
+  // $(".map-popup").click(function() {
+  //   mapPopup.open();
+  // });
+
 });
 
 //Client ID: 934568525970-k030jnmj8inqp2c48arrmopvlsg5ncgh.apps.googleusercontent.com
