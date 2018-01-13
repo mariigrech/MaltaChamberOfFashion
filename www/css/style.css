@@ -319,6 +319,12 @@ img.map-popup {
     width: 60%;
 }
 
+#linematerial {
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 5px;
+}
+
 #title2 {
     padding-top: 10px;
     font-family: "Bebas Neue", Bebas, sanf-serif;
@@ -371,4 +377,9 @@ img.map-popup {
     text-decoration: underline;
     font-size: 15px;
     text-align: center;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("fonts/BebasNeue.otf");
 }
