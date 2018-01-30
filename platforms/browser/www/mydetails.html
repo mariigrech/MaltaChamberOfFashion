@@ -1,0 +1,125 @@
+<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+<!--This page is done by Naomi Zammit Ciantar-->
+<div data-name="donatenow" class="page">
+    <!-- Scrollable page content -->
+    <div class="page-content">
+        <div class="content-block">
+            <div class="logo">
+                <img id="logo1" src="img/logo.png" alt="logo"></img>
+            </div>
+            <div class="back">
+                <!-- <a href="index.html"><i class="icon fa fa-arrow-left"></i><onclick="history.back(-1)"/></a> -->
+                <a href="myaccount.html"><img id="arrow" src="img/arrow.png" alt="arrow"></img></a>
+            </div>
+
+            <div id="title2">
+                <h2>My Details</h2>
+            </div>
+
+            <div class="list-inset">
+                <div class="item-content-item-input">
+                    <div class="item-inner2">
+                        <div class="item-input-wrap">
+                            <div id="holder">
+                                <!--The user updates his/her name and surname-->
+                                <input type="text" placeholder="Name & Surname" span class="input-clear-button11"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-content-item-input">
+                    <div class="item-inner2">
+                        <div class="item-input-wrap">
+                            <!--The user updates his/her locality by pressing on the drop down menu displaying all localities situated in Malta and Gozo-->
+                            <input type="text" placeholder="Locality" list="locality" span class="input-clear-button22"></span>
+                            <datalist id="locality">
+                                        <option value="Ħ'Attard"</option>
+                                        <option value="Ħal Balzan"</option>
+                                        <option value="Il-Bidnija"</option>
+                                        <option value="Il-Birgu (Vittoriosa)"</option>
+                                        <option value="Birkirkara"</option>
+                                        <option value="Birżebbuġa"</option>
+                                        <option value="Bormla (Cospicua)"</option>
+                                        <option value="Ħad-Dingli"</option>
+                                        <option value="Il-Fgura"</option>
+                                        <option value="Il-Furjana"</option>
+                                        <option value="Ħal Għargħur"</option>
+                                        <option value="Ħal Għaxaq"</option>
+                                        <option value="Il-Gudja"</option>
+                                        <option value="Il-Gżira"</option>
+                                        <option value="Il-Ħamrun"</option>
+                                        <option value="L-Iklin"</option>
+                                        <option value="Il-Kalkara"</option>
+                                        <option value="Ħal Kirkop"</option>
+                                        <option value="Ħal Lija"</option>
+                                        <option value="Ħal Luqa"</option>
+                                        <option value="Il-Marsa"</option>
+                                        <option value="Marsaskala or Wied il-Għajn"</option>
+                                        <option value="Marsaxlokk"</option>
+                                        <option value="L-Imdina"</option>
+                                        <option value="Il-Mellieħa"</option>
+                                        <option value="L-Imġarr"</option>
+                                        <option value="Il-Mosta"</option>
+                                        <option value="L-Imqabba"</option>
+                                        <option value="L-Imsida"</option>
+                                        <option value="L-Imtarfa"</option>
+                                        <option value="In-Naxxar"</option>
+                                        <option value="Raħal Ġdid (Paola)"</option>
+                                        <option value="Pembroke"</option>
+                                        <option value="Tal-Pietà"</option>
+                                        <option value="Ħal Qormi"</option>
+                                        <option value="Il-Qrendi"</option>
+                                        <option value="Ir-Rabat, Malta"</option>
+                                        <option value="Ħal Safi"</option>
+                                        <option value="San Ġwann"</option>
+                                        <option value="Santa Luċija"</option>
+                                        <option value="Santa Venera"</option>
+                                        <option value="L-Isla (Senglea)"</option>
+                                        <option value="Is-Siġġiewi"</option>
+                                        <option value="Tas-Sliema"</option>
+                                        <option value="San Ġiljan"</option>
+                                        <option value="San Pawl il-Baħar"</option>
+                                        <option value="Is-Swieqi"</option>
+                                        <option value="Ħal Tarxien"</option>
+                                        <option value="Ta' Xbiex"</option>
+                                        <option value="Il-Belt Valletta"</option>
+                                        <option value="Ix-Xgħajra"</option>
+                                        <option value="Ħaż-Żabbar"</option>
+                                        <option value="Ħaż-Żebbuġ (Malta)"</option>
+                                        <option value="Iż-Żejtun"</option>
+                                        <option value="Iż-Żurrieq"</option>
+                                        <option value="Il-Fontana or It-Triq tal-Għajn"</option>
+                                        <option value="Għajnsielem"</option>
+                                        <option value="L-Għarb"</option>
+                                        <option value="L-Għasri"</option>
+                                        <option value="Ta' Kerċem"</option>
+                                        <option value="Il-Munxar and Ix-Xlendi"</option>
+                                        <option value="In-Nadur"</option>
+                                        <option value="Il-Qala"</option>
+                                        <option value="Ir-Rabat"</option>
+                                        <option value="San Lawrenz"</option>
+                                        <option value="Ta' Sannat"</option>
+                                        <option value="Ix-Xagħra"</option>
+                                        <option value="Ix-Xewkija"</option>
+                                        <option value="Iż-Żebbuġ(Gozo)and Marsalforn"</option>
+                                    </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-content-item-input">
+                    <div class="item-inner2">
+                        <div class="item-input-wrap">
+                            <!--The user updates his/her phone number-->
+                            <input type="number" placeholder="Phone Number" span class="input-clear-button33"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="edit">
+                <h2>Edit Details</h2>
+            </div>
+        </div>
+        <!-- Link to another page -->
+        <!-- <a href="about.html">About app</a> -->
+    </div>
+</div>

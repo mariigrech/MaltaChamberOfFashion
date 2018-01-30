@@ -35,18 +35,18 @@ h1 {
 }
 
 #logo1 {
-    height: 30%;
     width: 30%;
-    float: right;
-    margin-top: -75px;
-    margin-right: -12px;
+    position: absolute;
+    right: 2px;
+    top: 10px;
 }
 
 #arrow {
-    height: 15%;
+    height: 12%;
     width: 20%;
     float: left;
     margin-top: -50px;
+    position: absolute;
 }
 
 .menuitem {
@@ -54,11 +54,10 @@ h1 {
     text-align: center;
 }
 
-#account {
+.menuitem img {
+    display: block;
     height: 10vh;
-    margin-top: 25px;
-    padding-left: 20px;
-    text-align: center;
+    margin: auto;
 }
 
 #header2 {
@@ -103,19 +102,9 @@ h1 {
     height: 100%;
 }
 
-.MyAccount3 {
-    margin-top: -10px;
-}
-
-.MyAccount4 {
-    margin-top: 10px;
-}
-
 #detail {
     height: 10vh;
     margin-top: 40px;
-    text-align: center;
-    padding-left: 30px;
 }
 
 #menuitem {
@@ -321,7 +310,7 @@ img.map-popup {
 
 #linematerial {
     width: 100%;
-    padding-top: 220px;
+    padding-top: 260px;
     margin-left: 5px;
 }
 
@@ -336,6 +325,22 @@ img.map-popup {
 
 .item-content-item-input2 {
     padding-left: 80px;
+}
+
+.go {
+    float: right;
+    padding-right: 30px;
+    padding-top: 70px;
+}
+
+.go a {
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-size: 45px;
+    padding-right: 20px;
+    text-decoration: underline;
 }
 
 #title2 {
@@ -388,8 +393,12 @@ img.map-popup {
     letter-spacing: 4px;
     font-weight: lighter;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
+}
+
+#edit a {
+    color: #ffffff;
 }
 
 li#zipper1 {
@@ -475,6 +484,106 @@ li#zipper1 {
     margin-top: -75px;
     padding-right: 22px;
     height: 50px;
+}
+
+input[type=checkbox] {
+    transform: scale(2.5);
+}
+
+li#zipper1 {
+    height: 50px;
+}
+
+#zipper1 {
+    background-color: #fff;
+    height: 40px;
+    padding-top: 30px;
+}
+
+.item-media-listb {
+    height: 40px;
+    margin-top: -20px;
+}
+
+.item-media-listz {
+    height: 40px;
+    margin-top: -20px;
+}
+
+#zipper2 {
+    background-color: #fff;
+    height: 40px;
+    padding-top: 60px;
+}
+
+#buttoncolour {
+    width: 60px;
+    height: auto;
+    margin-top: -15px;
+    padding-left: 20px;
+}
+
+#zippercolour {
+    width: 60px;
+    height: auto;
+    padding-top: -26px;
+    padding-left: 20px;
+}
+
+#contentlist {
+    padding-top: 50px;
+    margin-left: -40px;
+}
+
+.item-title-listz {
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 120px;
+    font-size: 20px;
+}
+
+.item-subtitle-listz {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 140px;
+}
+
+.item-title-listb {
+    text-align: right;
+    margin-top: -50px;
+    margin-right: 140px;
+    font-size: 20px;
+}
+
+.item-subtitle-listb {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 140px;
+}
+
+.item-checkbox-item-content {
+    float: right;
+    margin-top: -143px;
+    padding-right: 22px;
+    height: 50px;
+}
+
+.item-checkbox-item-content2 {
+    float: right;
+    margin-top: -75px;
+    padding-right: 22px;
+    height: 50px;
+}
+
+.searchlocality2 {
+    margin-top: -10px;
+    font-family: "Bebas Neue", Bebas, sanf-serif;
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
 }
 
 input[type=checkbox] {

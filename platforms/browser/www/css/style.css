@@ -43,8 +43,8 @@ h1 {
 }
 
 #arrow {
-    height: 15%;
-    width: 20%;
+    height: 12%;
+    width: 16%;
     float: left;
     margin-top: -50px;
 }
@@ -56,8 +56,8 @@ h1 {
 
 #account {
     height: 10vh;
-    margin-top: 25px;
-    padding-left: 20px;
+    margin-top: 75px;
+    padding-left: 30px;
     text-align: center;
 }
 
@@ -92,9 +92,15 @@ h1 {
     text-align: center;
 }
 
-#line {
+#line1 {
     width: 100%;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-left: 5px;
+}
+
+#line12 {
+    width: 100%;
+    margin-top: -55px;
     margin-left: 5px;
 }
 
