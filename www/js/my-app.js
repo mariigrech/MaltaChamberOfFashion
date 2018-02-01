@@ -28,5 +28,25 @@ $$(document).on('pageInit', function() {
 });
 
 
+function handleLogin(){
+
+    var phpResponse = false;
+
+    if (!phpRespone) {
+        alert("Failed to login")
+        return false;
+    }
+}
+
+function handleSignUp(){
+
+    var phpRespone = false;
+
+    if (!phpRespone) {
+        alert("Failed to sign up")
+        return false;
+    }
+}
+
 //Client ID: 934568525970-k030jnmj8inqp2c48arrmopvlsg5ncgh.apps.googleusercontent.com
 //Client Secret: 4RNnmMQbJHCAlw-rq-EGw7P-
